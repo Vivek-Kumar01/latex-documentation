@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/project3.css" rel="stylesheet">
+        <title>LaTeX Documentation</title>
+    </head>
+    <body>
+
+        <nav id="navbar">
+            <header>LaTeX Documentation</header>
+            <ul>
+                <li><a href="#Introduction_to_LaTeX" class="nav-link">Introduction to LaTeX</a></li>
+                <li><a href="#Uses" class="nav-link">Uses</a></li>
+                <li><a href="#Title_and_Author" class="nav-link">Title and Author</a></li>
+                <li><a href="#Sections" class="nav-link">Sections</a></li>
+                <li><a href="#Lists" class="nav-link">Lists</a></li>
+                <li><a href="#Figures_and_Tables" class="nav-link">Figures and Tables</a></li>
+                <li><a href="#Mathematics" class="nav-link">Mathematics</a></li>
+                <li><a href="#Hyperlinks" class="nav-link">Hyperlinks</a></li>
+                <li><a href="#Geometry" class="nav-link">Geometry</a></li>
+            </ul>
+        </nav>
+
+        <main id="main-doc">
+
+            <section class="main-section" id="Introduction_to_LaTeX">
+                <header>Introduction to LaTeX</header>
+                <p>LaTeX (pronounced "Lay-tech" or "Lah-tech") is a high-quality typesetting system commonly used for producing scientific and technical documents. It is based on the TeX typesetting system created by Donald Knuth. LaTeX provides a set of macros and commands that allow authors to focus on the content of their documents while the system handles the layout and formatting.</p>
+                <ul>
+                    LaTeX was developed in the early 1980s by Leslie Lamport as a set of macros for the TeX typesetting system. Here is a brief timeline of its development:
+                    <li><span class="bold">1978:</span> Donald Knuth creates TeX, a typesetting system designed to produce beautifully formatted books, particularly those with complex mathematical content.</li>
+                    <li><span class="bold">1984:</span> Leslie Lamport releases LaTeX, which builds on TeX by providing a higher-level language with commands for common formatting tasks. LaTeX makes it easier for users to create complex documents without needing to delve into the more intricate aspects of TeX.</li>
+                    <li><span class="bold">1994:</span> LaTeX2e is released as the standard version of LaTeX, providing a more stable and extensible framework.</li>
+                    <li><span class="bold">2000s-present:</span> LaTeX continues to be maintained and extended by the LaTeX Project Team, with numerous packages developed by the community to add functionality.</li>
+                </ul>
+            </section>
+
+            <section class="main-section" id="Uses">
+                <header>Uses</header>
+                <ul>
+                    LaTeX is widely used in academia, especially in fields that require the inclusion of complex mathematical expressions, such as mathematics, physics, computer science, engineering, and economics. Its primary uses include:
+                    <li><span class="bold">Scientific Research Papers:</span>LaTeX is the de facto standard for formatting research papers due to its ability to handle complex mathematical notations and its support for citation management.</li>
+                    <li><span class="bold">Theses and Dissertations:</span>Many universities provide LaTeX templates for students to ensure consistent formatting of theses and dissertations.</li>
+                    <li><span class="bold">Books and Articles:</span>Authors of technical books and articles use LaTeX to produce documents with professional-quality typesetting.</li>
+                    <li><span class="bold">Presentations:</span>With packages like Beamer, LaTeX can be used to create professional presentations.</li>
+                    <li><span class="bold">Resumes and CVs:</span>LaTeX can be used to create visually appealing and well-structured resumes and CVs.</li>
+                    <li><span class="bold">Letters and Reports:</span>LaTeX provides classes and templates for writing formal letters and reports.</li>
+                </ul>
+            </section>
+
+            <section class="main-section" id="Title_and_Author">
+                <header>Title and Author</header>
+                <p>The '\title{}' command sets the title of the document. The '\author{}' command sets the author of the document. The '\date{}' command sets the date of the document. '\date{\today}' automatically sets it to the current date. The '\maketitle' command generates the title, author, and date on the document.</p>
+                <code>
+\title{Sample LaTeX Document}
+\author{John Doe}
+\date{\today}
+\maketitle
+                </code>
+            </section>
+
+            <section class="main-section" id="Sections">
+                <header>Sections</header>
+                <p>The '\section{}' command creates a new section with the specified title. The '\subsection{}' command creates a subsection within a section. The '\subsubsection{}' command creates a sub-subsection within a subsection. The '\label{}' command sets a label that can be referenced elsewhere in the document using the '\ref{}' command.</p>
+                <code>
+\section{Introduction}
+This is the introduction section. Here, you introduce the topic and provide background information.
+
+\section{Methods}
+This section describes the methods used in the study.
+
+\subsection{Experimental Setup}
+Details about the experimental setup.
+
+\subsection{Data Collection}
+Explanation of how data was collected.
+
+\subsection{Data Analysis}
+Description of the data analysis techniques used.
+                </code>
+            </section>
+            
+            <section class="main-section" id="Lists">
+                <header>Lists</header>
+                <p>The '\begin{itemize} ... \end{itemize}' environment is used to create a bullet list. Each item in the list is specified with the \item command. The '\begin{enumerate} ... \end{enumerate}' environment is used to create a numbered list.</p>
+                <code>
+\begin{itemize}
+    \item \textbf{Title Page}: Includes the title, author names, affiliations, and contact information.
+    \item \textbf{Abstract}: A brief summary of the research, usually around 250 words.
+    \item \textbf{Introduction}: Provides background information and states the research question or hypothesis.
+    \item \textbf{Methods}: Describes the experimental procedures and data analysis techniques.
+    \item \textbf{Results}: Presents the findings of the study.
+    \item \textbf{Discussion}: Interprets the results and discusses their implications.
+    \item \textbf{References}: Lists all the sources cited in the manuscript.
+\end{itemize}                   
+                </code>
+                <code>
+\begin{enumerate}
+    \item \textbf{Read the Submission Guidelines}: Carefully review the submission guidelines provided by the journal or conference.
+    \item \textbf{Format Your Manuscript}: Ensure your manuscript follows the required formatting style, including font size, margins, and section headings.
+    \item \textbf{Write and Revise Your Manuscript}: Draft your manuscript and revise it for clarity, coherence, and conciseness.
+    \item \textbf{Prepare Figures and Tables}: Create and format any figures and tables according to the submission guidelines.
+    \item \textbf{Compile References}: Compile a list of references and ensure they are cited correctly in your manuscript.
+    \item \textbf{Proofread Your Manuscript}: Proofread your manuscript for spelling, grammar, and punctuation errors.
+    \item \textbf{Submit Your Manuscript}: Submit your manuscript through the journal or conference’s submission system.
+\end{enumerate}                    
+                </code>
+            </section>
+
+            <section class="main-section" id="Figures_and_Tables">
+                <header>Figures and Tables</header>
+                <p><span class="bold">Figure: </span>
+                    The '\begin{figure}[h] ... \end{figure}' environment is used to include figures. The [h] option suggests the figure should appear "here" in the text.
+                    The '\includegraphics[width=\textwidth]{filename}' command is used to include an image file. The width=\textwidth option scales the image to the width of the text.
+                    The '\caption{}' command adds a caption to the figure.
+                    The '\label{}' command sets a label for the figure, which can be referenced later using the \ref{} command.
+                </p>
+                <p><span class="bold">Table: </span>
+                    The '\begin{table}[h] ... \end{table}' environment is used to create tables. The [h] option suggests the table should appear "here" in the text.
+                    The '\begin{tabular}{|c|c|c|} ... \end{tabular}' environment is used to create the actual table. The {|c|c|c|} argument specifies the number of columns and their alignment (centered in this case), with vertical lines between them.
+                    The \hline command creates a horizontal line across the table.
+                    Table cells are separated by the & symbol, and rows are ended with \\.
+                    The '\caption{}' command adds a caption to the table.
+                    The '\label{}' command sets a label for the table, which can be referenced later using the \ref{} command.
+                </p>
+                <code>
+% in preamble
+\usepackage{graphicx}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{example-figure.png}
+    \caption{Example figure caption.}
+    \label{fig:example}
+\end{figure}
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|c|}
+        \hline
+        Column 1 & Column 2 & Column 3 \\
+        \hline
+        Data 1 & Data 2 & Data 3 \\
+        Data 4 & Data 5 & Data 6 \\
+        \hline
+    \end{tabular}
+    \caption{Example table caption.}
+    \label{tab:example}
+\end{table}
+                </code>
+            </section>
+
+            <section class="main-section" id="Mathematics">
+                <header>Mathematics</header>
+                <p><span class="bold">Inline Math: </span>
+                    Mathematical content can be included inline with text using the '$...$' environment.
+                </p>
+                <p><span class="bold">Display Math: </span>
+                    For larger equations or those that need to be centered, the '\begin{equation} ... \end{equation}' environment can be used. The '\[...\]' environment can also be used for unnumbered displayed equations.
+                </p>
+                <code>
+\section{Inline Math}
+Inline math is used when mathematical expressions are included within a line of text. For example, the quadratic formula is given by $ax^2 + bx + c = 0$. Another example is the equation for the circumference of a circle, which is $C = 2 \pi r$ where $r$ is the radius.
+
+\section{Display Math}
+Display math is used for larger equations or those that need to be centered on their own line. These equations are usually more complex and benefit from being set apart from the main text.
+The quadratic formula can be displayed as follows:
+    \begin{equation}
+        x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+    \end{equation}
+                </code>
+            </section>
+
+            <section class="main-section" id="Hyperlinks">
+                <header>Hyperlinks</header>
+                <p> The '\usepackage{hyperref}' package is used to create hyperlinks within the document. The '\href{URL}{text}' command creates a hyperlink to an external URL with the specified anchor text.</p>
+                <code>
+\usepackage{hyperref}
+\href{https://www.overleaf.com/learn}{Overleaf LaTeX Tutorials}: Overleaf offers a comprehensive set of tutorials and examples for learning LaTeX.
+                </code>
+            </section>
+
+            <section class="main-section" id="Geometry">
+                <header>Geometry</header>
+                <p>The '\usepackage{geometry}' package allows for easy configuration of page dimensions. The '\geometry{}' command is used to specify settings such as paper size and margins.</p>
+                <code>
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+                </code>
+            </section>
+
+        </main>
+    </body>
+</html>

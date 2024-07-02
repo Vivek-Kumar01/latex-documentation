@@ -1,0 +1,99 @@
+/* Reset default margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling for the whole page */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    color: #333;
+    display: flex; /* Use flexbox for layout */
+}
+
+/* Styling for the left navigation panel */
+#navbar {
+    width: 250px;
+    background-color: #ddd;
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+    overflow-y: auto;
+}
+
+#navbar header {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#navbar li {
+    margin-bottom: 10px;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 5px;
+}
+
+#navbar a:hover {
+    background-color: #ccc;
+}
+
+/* Main content container */
+#main-doc {
+    margin-left: 310px; /* Adjust for navbar width */
+    padding: 20px;
+    flex: 1; /* Take up remaining space */
+}
+
+/* Main sections styling */
+.main-section {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.main-section header {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.main-section p {
+    margin-bottom: 10px;
+}
+
+.main-section .bold {
+    font-weight: bold;
+}
+
+/* Styling for code blocks */
+code {
+    display: block;
+    background-color: #f8f8f8;
+    padding: 10px;
+    margin-top: 10px;
+    white-space: pre-wrap; /* Preserve formatting */
+    border: 1px solid #ccc;
+}
+
+@media (max-width: 768px) {
+    body {
+        background-color: #333;
+    }
+
+    .navbar {
+        background-color: #555;
+    }
+}
